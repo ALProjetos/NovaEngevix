@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovaEngevix", "NovaEngevix\NovaEngevix.csproj", "{5CD4192C-8FB6-432A-AC81-3B16FBF8AB94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaEngevix.Tests", "NovaEngevix.Tests\NovaEngevix.Tests.csproj", "{2DACB9D8-0761-4200-AD99-EBD1D07D6EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD4192C-8FB6-432A-AC81-3B16FBF8AB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD4192C-8FB6-432A-AC81-3B16FBF8AB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD4192C-8FB6-432A-AC81-3B16FBF8AB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD4192C-8FB6-432A-AC81-3B16FBF8AB94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DACB9D8-0761-4200-AD99-EBD1D07D6EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DACB9D8-0761-4200-AD99-EBD1D07D6EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DACB9D8-0761-4200-AD99-EBD1D07D6EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DACB9D8-0761-4200-AD99-EBD1D07D6EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {315A6512-DD1D-47D4-B91A-438692FB7B72}
+	EndGlobalSection
+EndGlobal

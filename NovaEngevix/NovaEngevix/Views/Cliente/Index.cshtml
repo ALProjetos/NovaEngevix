@@ -1,0 +1,36 @@
+﻿@model List<ClienteViewModel>
+
+<h2>Lista dos Clientes</h2>
+
+<div style="margin-top: 20px">
+    <a asp-action="Criar">Novo</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Descrição</th>
+            <th>Arquivo</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Id</td>
+                <td>@cliente.NomeCliente</td>
+                <td>@cliente.Descricao</td>
+                <td>@cliente.NomeArquivo</td>
+                <td>@cliente.Status</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@cliente.Id">Editar</a> |
+                    <a asp-action="Download" asp-route-id="@cliente.Id">Download</a> |
+                    <a asp-action="Delete" asp-route-id="@cliente.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

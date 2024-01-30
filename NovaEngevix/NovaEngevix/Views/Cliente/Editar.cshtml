@@ -1,0 +1,30 @@
+﻿@model ClienteViewModel
+
+<h2>Editar Cliente</h2>
+
+<form asp-action="Editar">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="NomeCliente" />
+    <input type="hidden" asp-for="NomeArquivo" />
+    <div class="form-group">
+        <label asp-for="NomeCliente">Nome do Cliente</label>
+        <input asp-for="NomeCliente" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Descricao"></label>
+        <textarea asp-for="Descricao" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="0">Selecione</option>
+            <option value="Aprovado">Aprovado</option>
+            <option value="Pendente">Pendente</option>
+            <option value="Reprovado">Reprovado</option>
+        </select>
+    </div>
+
+    <div style="margin-top: 20px">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+</form>

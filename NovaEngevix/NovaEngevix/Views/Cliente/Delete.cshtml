@@ -1,0 +1,28 @@
+﻿@model ClienteViewModel
+
+<h2>Confirmar Exclusão</h2>
+
+<div>
+    <h4>Tem certeza que deseja excluir o arquivo do cliente?</h4>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NomeCliente)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-action="Index">Cancelar</a>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+﻿@model ClienteViewModel
+
+<h2>Criar Cliente</h2>
+
+@using (Html.BeginForm("Criar", "Cliente", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <label asp-for="NomeCliente">Nome do cliente</label>
+        <input asp-for="NomeCliente" class="form-control" required />
+        <span asp-validation-for="NomeCliente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descricao"></label>
+        <textarea asp-for="Descricao" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control" required>
+            <option value="0">Selecione</option>
+            <option value="Aprovado">Aprovado</option>
+            <option value="Pendente">Pendente</option>
+            <option value="Reprovado">Reprovado</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Arquivo"></label>
+        <input type="file" asp-for="Arquivo" class="form-control" required />
+    </div>
+
+    <div style="margin-top: 20px">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+}
